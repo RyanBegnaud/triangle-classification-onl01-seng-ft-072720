@@ -13,7 +13,10 @@ class Triangle
       raise TriangleError
     elsif @length1 + @length2 < @length3
       raise TriangleError
-    
+    elsif @length1 + @length3 < @length2
+      raise TriangleError
+    elsif @length2 + @length3 < @length1
+      raise TriangleError
     end
     
     if @length1 == @length2 && @length2 == @length3
