@@ -17,7 +17,7 @@ class Triangle
       :isosceles
     elsif @length1 == @length2 
       :isosceles
-    else 
+    elsif @length1 != @length2 && @length2 != @length3 
       :scalene
     end
   end
